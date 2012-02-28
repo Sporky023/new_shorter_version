@@ -1,22 +1,34 @@
-// Place all the styles related to the mockups controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+@import "fonts";
 
+a {
+  color: #2463de;
+  text-decoration: none;
+  &:hover{ text-decoration: underline; }
+  &:visited{ color: #2463de; }
+}
+
+$header_height: 60px;
 #header {
-  height: 100px;
+  height: $header_height;
   border-bottom: 5px solid #eee;
   opacity: 0.9;
   margin-bottom: 20px;
   #logo {
-    height: 100px;
-    font-size: 50px;
-    font-family: sans-serif;
-    color: #ddd;
-    line-height: 100px;
+    height: $header_height;
+    .name {
+      font-size: 30px;
+    }
+    .tagline {
+      font-size: 15px;
+    }
+    font-family: 'Convergence', sans-serif;
+    color: #aaa;
+    // line-height: $header_height;
   }
   nav {
-    line-height: 100px;
-    height: 100px;
+    line-height: $header_height;
+    height: $header_height;
     float: right;
     display: block;
     text-align: right;
@@ -34,33 +46,59 @@
 
 article {
   min-height: 200px;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
 
   h2 {
     margin: 0px;
     float: left;
+    font-family: $serif;
+    font-weight: normal;
+  }
+  .source {
+    margin-top: 0;
+    font-family: $sans-serif;
+    color: #ccc;
+    margin-bottom: 10px;
   }
   p {
+    color: #333;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5em;
     margin: 0;
+    $article_body_image_vertical_offset: 6px;
     img.news {
+      position: relative;
+      top: $article_body_image_vertical_offset;
+      margin: 0 10px $article_body_image_vertical_offset;
       float: right;
     }
   }
+  .tags {
+    display: block;
+    margin-top: 10px;
+    a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
   footer {
+    margin-top: 10px;
     border-top: 1px solid #eee;
+    padding-top: 10px;
     .author{
       float: left;
       img {
         height: 32px;
         width: 32px;
         float: left;
-        margin-bottom: 10px
+        margin-bottom: 10px;
+        margin-right: 10px;
       }
     }
     .voting {
     }
     .actions {
-
+      float: right;
     }
   }
 }
@@ -80,9 +118,3 @@ article {
   }
 }
 
-#story_show {
-  #story {
-    background-color: #eee;
-    min-height: 400px;
-  }
-}

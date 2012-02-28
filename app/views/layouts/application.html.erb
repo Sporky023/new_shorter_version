@@ -9,12 +9,19 @@
 <body>
   <div id="container">
     <div id='header'>
-      <div class='g columns_6' id='logo'>
-        Shorter Version
+      <div class='g columns_6' id='logo' onclick="window.location = '/mockups/home'">
+        <div class="name">
+          Shorter Version
+        </div>
+        <div class="tagline">
+          what you were about to read, summarized
+        </div>
       </div>
-      <nav>
-        <button class='shiny-blue'>write a summary</button>
-      </nav>
+      <% if @summary_button %>
+        <nav>
+          <button class='shiny-blue' onclick="window.location = '/mockups/write_summary_start'">write a summary</button>
+        </nav>
+      <% end %>
     </div>
     <div id="main">
       <%= yield %>

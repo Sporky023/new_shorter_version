@@ -1,0 +1,40 @@
+#write_summary
+  #leftcol.g.columns_6
+    %form
+      The original article is
+      %span.characters.limit 6416
+      characters long.
+      %br
+      The character limit for your summary is
+      %span.characters.limit 641
+      characters.
+      %textarea{:rows => "20", :cols => "50", :placeholder => "write your summary here"}
+        This is some summary text that's already in progress.  The numbers along the bottom are changing in real time just like twitter.  My character count here is maxed at 1/10 the character count of the article.
+      %br
+      %span.characters.used 216 characters
+      %br
+      %input{:size => "35", :placeholder => "comma separated tags"}
+      #pick_an_image
+        pick an image
+        %table
+          %tr
+            %td
+              = image_tag "mockups/news_evan.jpg"
+              %br
+              = radio_button_tag :foo, 'foo', true
+            %td
+              = image_tag "mockups/news1.jpg"
+              %br
+              = radio_button_tag :foo, 'fooh', false
+            %td
+              = image_tag "mockups/news2.jpg"
+              %br
+              = radio_button_tag :foo, 'foof', false
+      %br
+      %button save draft
+      %button publish
+      %button.preview{:type => "button",
+        :onclick => "window.location = '/mockups/write_summary_preview'"} preview
+
+  #readable_text_format.g.columns_6
+    = render "mockups/instapaper_output2"

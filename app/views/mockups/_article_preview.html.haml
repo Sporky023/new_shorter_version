@@ -1,0 +1,23 @@
+%article
+  %header
+    %h2.g= link_to "Obama eats sandwich, leaves room"
+    %br{:clear => "both"}
+
+  %p
+    = image_tag "mockups/news_evan.jpg", :class => "g columns_2 news"
+    This is some summary text that's already in progress.  The numbers along the bottom are changing in real time just like twitter.  My character count here is maxed at 1/10 the character count of the article.
+    %br
+    %em tags:
+    = link_to "fun"
+    = link_to "games"
+    = link_to "losing an eye"
+
+  %footer
+    .author
+      = image_tag "avatar.jpg"
+      summary by Joe Shmoe
+    .actions
+      = link_to "other summaries of this article", :action => "story_show"
+      = "(#{rand(10) + 1})"
+  %br{:clear => "both"}
+

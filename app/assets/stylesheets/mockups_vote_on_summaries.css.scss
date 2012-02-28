@@ -1,0 +1,53 @@
+@import "variables";
+
+#vote_on_summaries {
+  header{
+    h1 {
+      font-family: $serif;
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 0;
+      border-bottom: solid #ddd;
+      border-width: 3px;
+    }
+  }
+  #story {
+    background-color: #eee;
+    min-height: 400px;
+  }
+
+  article {
+    .voting {
+      $voting_width: 50px;
+      $voting_height: 84px;
+      $voting_margin: 10px;
+      // background-color: #eee;
+      width: $voting_width;
+      height: $voting_height;
+      position: relative;
+      left: $voting_width * -1 - $voting_margin;
+      margin-bottom: $voting_height * -1;
+      text-align: center;
+      div {
+        height: $voting_height / 3;
+        &.upvote {
+          background: url("/assets/upvote_button_black.png") no-repeat;
+          background-position: center;
+        }
+        &.score {
+          // background-color: #aaf;
+          line-height: 22px;
+          font-family: Helvetica, sans-serif;
+          font-size: 22px;
+          position: relative;
+          top: 5px;
+        }
+        &.downvote {
+          background: url("/assets/downvote_button_black.png") no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}

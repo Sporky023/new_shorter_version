@@ -1,0 +1,43 @@
+@import "variables";
+
+#write_summary_start {
+  text-align: center;
+  input {
+    font-size: 30px;
+  }
+}
+
+#write_summary {
+  span.characters {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    &.limit {
+      color: green;
+    }
+    &.used {
+      color: red;
+    }
+  }
+}
+
+#write_summary form {
+  textarea {
+    font-size: 14px;
+  }
+  #pick_an_image {
+    margin-top: 10px;
+    background-color: #eee;
+    text-align: center;
+    td { vertical-align: bottom; }
+  }
+  button.preview {float: right;}
+}
+
+#readable_text_format {
+  box-sizing: border-box;
+  padding: 10px;
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  h1 { font-family: $serif; }
+}

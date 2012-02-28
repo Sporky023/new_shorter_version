@@ -1,0 +1,63 @@
+# how to get summaries
+
+## why would a person write a summary?
+
+* to get their avatar in place
+* to control how people interpret the news
+* to get a sense of satisfaction
+* to improve their own understanding
+
+
+## why would a person vote on summaries?
+
+* to contribute without writing
+* to get to know the site
+* to understand the issue even better
+* 
+
+
+## why would a person read summaries?
+
+* to save themselves time
+* to be able to cover more material
+
+
+
+
+
+possible new workflow:
+
+I go to the main site.
+I read a summary.
+After reading, I see options:
+  * thumbs-up
+  * thumbs-down
+  * show me another
+I click "thumbs-down"
+I click "show me another"
+I see another summary
+I read that summary.
+I see options:
+  * thumbs-up
+  * thumbs-down
+  * show me another
+
+
+## no no, even better:
+
+I go to the main site.
+I read a summary.
+I see options:
+  * show me another summary of this article
+  * move on to the next article
+I click "show me another summary of this article"
+I read that summary.
+I see options:
+  * show me another summary of this article
+  * move on to the next article
+I click "move on to the next article"
+I read that summary.
+I see options:  ..etc
+
+
+

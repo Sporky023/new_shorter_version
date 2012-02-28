@@ -1,0 +1,8 @@
+- @summary_button = false
+#write_summary_start
+  %form{:action => "/mockups/write_summary"}
+    %label paste the url of the story you want to summarize
+    %br
+    %input{:type => "text", :size => "60"}
+    %br
+    %button.shiny-blue{:type => "submit"} start writing

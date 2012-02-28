@@ -4,23 +4,17 @@
       - headlines = ["Water found on Mars", "Some headlines are entirely too long to fit on one line, according to ASPCA study", "Obama eats a sandwich, leaves room"]
       %h2.g= link_to headlines.shuffle[0]
       %br{:clear => "both"}
-      .source nytimes.com
 
+  .voting
+    .upvote
+    .score= (rand(100) - 50).to_s
+    .downvote
   %p
     - i = rand(3) + 1
-    = image_tag "mockups/news#{i}.jpg", :class => "g columns_2 news"
     = Array.new(2 * i, "The officer leading a police investigation said e-mail records showed editors and reporters at The Sun had paid hundreds of thousands of dollars for information.").join(' ')
-    %br
-  .tags
-    = link_to "#fun"
-    = link_to "#games"
-    = link_to "#losing an eye"
 
   %footer
     .author
       = image_tag "avatar.jpg"
       summary by Joe Shmoe
-    .actions
-      = link_to "other summaries of this article", :action => "vote_on_summaries"
-      = "(#{rand(10) + 1})"
   %br{:clear => "both"}
