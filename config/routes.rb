@@ -1,4 +1,10 @@
 ShorterVersion::Application.routes.draw do
+  get "mockups/home"
+
+  get "mockups/write_summary"
+
+  get "mockups/story_show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,88 @@
+// Place all the styles related to the mockups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header {
+  height: 100px;
+  border-bottom: 5px solid #eee;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  #logo {
+    height: 100px;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #ddd;
+    line-height: 100px;
+  }
+  nav {
+    line-height: 100px;
+    height: 100px;
+    float: right;
+    display: block;
+    text-align: right;
+  }
+}
+
+.grey {
+  background-color: #eee;
+  opacity: 0.9;
+}
+
+#content {
+  padding-top: 20px;
+}
+
+article {
+  min-height: 200px;
+  margin-bottom: 30px;
+
+  h2 {
+    margin: 0px;
+    float: left;
+  }
+  p {
+    margin: 0;
+    img.news {
+      float: right;
+    }
+  }
+  footer {
+    border-top: 1px solid #eee;
+    .author{
+      float: left;
+      img {
+        height: 32px;
+        width: 32px;
+        float: left;
+        margin-bottom: 10px
+      }
+    }
+    .voting {
+    }
+    .actions {
+
+    }
+  }
+}
+
+#sidebar {
+  #search {
+    input {
+      font-size: 1.5em;
+      line-height: 25px;
+    }
+    button { width: 50px; }
+    margin-bottom: 20px;
+  }
+  min-height: 500px;
+  #tag_cloud {
+    height: 300px;
+  }
+}
+
+#story_show {
+  #story {
+    background-color: #eee;
+    min-height: 400px;
+  }
+}

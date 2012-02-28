@@ -1,0 +1,31 @@
+%article
+  - if show_image
+    %header
+      %h2.g A Headline
+      %br{:clear => "both"}
+
+  %p
+    - i = rand(3) + 1
+    - if show_image
+      = image_tag "mockups/news#{i}.jpg", :class => "g columns_2 news"
+    = Array.new(2 * i, "The officer leading a police investigation said e-mail records showed editors and reporters at The Sun had paid hundreds of thousands of dollars for information.").join(' ')
+    %br
+    %em tags:
+    = link_to "fun"
+    = link_to "games"
+    = link_to "losing an eye"
+
+  %footer
+    .author
+      = image_tag "avatar.jpg"
+      summary by Joe Shmoe
+    .voting.g.columns_2
+      = rand(100 - 50).to_s + " points"
+      %br
+      = link_to "vote up"
+      = link_to "vote down"
+    .actions
+      - if show_image
+        = link_to "other summaries of this article", :action => "story_show"
+        (2)
+  %br{:clear => "both"}

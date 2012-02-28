@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <div id="container">
+    <div id='header'>
+      <div class='g columns_6' id='logo'>
+        Shorter Version
+      </div>
+      <nav>
+        <button class='shiny-blue'>write a summary</button>
+      </nav>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <div id="footer"></div>
+  </div>
 
 </body>
 </html>

@@ -1,0 +1,16 @@
+#content
+  #artciles.g.columns_8
+    = render "mockups/article", {:show_image => true}
+    = render "mockups/article", {:show_image => true}
+    = render "mockups/article", {:show_image => true}
+    = render "mockups/article", {:show_image => true}
+    = render "mockups/article", {:show_image => true}
+
+  #sidebar.g.columns_4
+    #search
+      %input{:size => "15"}
+      %button.minimal search
+    #tag_cloud
+      = image_tag "tag_cloud.png", :class => "g columns_4"
+
+  %br{:clear => "both"}

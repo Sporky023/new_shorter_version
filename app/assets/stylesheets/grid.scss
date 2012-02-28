@@ -1,0 +1,21 @@
+#container {
+  margin: 0 auto;
+  // background: url("/assets/978px-12col-54w-30gut.png") repeat-y;
+  width: 978px;
+}
+
+$column_width: 54px;
+$gutter_width: 30px;
+.g {
+  float: left;
+  margin-left: $gutter_width + 1px;
+  &:first-child {
+    margin-left: 0px;
+  }
+  &.columns_1 { width: $column_width; }
+  &.columns_2 { width: $column_width * 2 + $gutter_width * 1; }
+  &.columns_4 { width: $column_width * 4 + $gutter_width * 3; }
+  &.columns_6 { width: $column_width * 6 + $gutter_width * 5; }
+  &.columns_8 { width: $column_width * 8 + $gutter_width * 7; }
+}
+
